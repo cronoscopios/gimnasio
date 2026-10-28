@@ -1,0 +1,73 @@
+# ------------------------------------------------------------
+# Dependencias
+# ------------------------------------------------------------
+/vendor
+/node_modules
+
+# ------------------------------------------------------------
+# Entorno y secretos
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+/auth.json
+/storage/*.key
+
+# ------------------------------------------------------------
+# Build de frontend (Vite)
+# ------------------------------------------------------------
+/public/build
+/public/hot
+/public/storage
+/public/fonts-manifest.dev.json
+
+# ------------------------------------------------------------
+# Laravel / herramientas PHP
+# ------------------------------------------------------------
+/storage/pail
+.phpunit.result.cache
+/.phpunit.cache
+/coverage
+.php-cs-fixer.cache
+.phpactor.json
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+Homestead.json
+Homestead.yaml
+*.log
+
+# ------------------------------------------------------------
+# Runtime portable local (PHP, Node, Composer, MCP) ~277 MB
+# ------------------------------------------------------------
+/.runtime
+
+# ------------------------------------------------------------
+# Claude Code / agentes de IA
+# (skills, agents, CLAUDE.md y boost.json SÍ se versionan)
+# ------------------------------------------------------------
+/.claude/settings.local.json
+/.claude/skills/impeccable/scripts/bin/
+# Rutas absolutas a .runtime: específico de esta máquina
+/.mcp.json
+/.codex
+
+# ------------------------------------------------------------
+# Editores e IDEs
+# ------------------------------------------------------------
+/.idea
+/.vscode
+/.cursor/
+/.zed
+/.nova
+*.swp
+*~
+
+# ------------------------------------------------------------
+# Sistema operativo
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
