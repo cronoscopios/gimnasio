@@ -1,0 +1,50 @@
+@layer components {
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        padding: var(--space-3) var(--space-6);
+        border: var(--border);
+        border-radius: var(--radius-pill);
+        background: var(--color-surface);
+        color: var(--color-ink);
+        font-weight: 700;
+        text-decoration: none;
+        box-shadow: 3px 3px 0 var(--color-ink);
+        transition:
+            transform 120ms ease,
+            box-shadow 120ms ease;
+    }
+
+    .button:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 5px 5px 0 var(--color-ink);
+    }
+
+    .button:active {
+        transform: translate(2px, 2px);
+        box-shadow: 1px 1px 0 var(--color-ink);
+    }
+
+    .button--primary {
+        background: var(--color-primary);
+    }
+
+    .button--sun {
+        background: var(--color-sun);
+    }
+
+    .button--small {
+        padding: var(--space-2) var(--space-4);
+        font-size: var(--text-sm);
+    }
+
+    .link-arrow {
+        font-weight: 700;
+    }
+
+    .link-arrow::after {
+        content: ' →';
+    }
+}

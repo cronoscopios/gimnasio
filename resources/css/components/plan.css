@@ -1,0 +1,67 @@
+@layer components {
+    .plan {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-4);
+        max-width: 30rem;
+        padding: var(--space-8);
+        border: var(--border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+    }
+
+    .plan--featured {
+        background: var(--color-mint);
+        box-shadow: var(--shadow-pop);
+    }
+
+    .plan__badge {
+        align-self: flex-start;
+        padding: var(--space-1) var(--space-3);
+        border: var(--border);
+        border-radius: var(--radius-pill);
+        background: var(--color-sun);
+        font-size: var(--text-sm);
+        font-weight: 700;
+    }
+
+    .plan__price {
+        font-size: var(--text-3xl);
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .plan__period {
+        font-size: var(--text-lg);
+        font-weight: 600;
+    }
+
+    .plan__terms {
+        display: grid;
+        gap: var(--space-1);
+        font-size: var(--text-sm);
+    }
+
+    .plan__terms dt {
+        display: inline;
+        font-weight: 700;
+    }
+
+    .plan__terms dd {
+        display: inline;
+        margin: 0;
+    }
+
+    .plan__features {
+        display: grid;
+        gap: var(--space-2);
+        flex: 1;
+        padding: 0;
+        list-style: none;
+    }
+
+    .plan__features li::before {
+        content: '✓ ';
+        font-weight: 700;
+    }
+}

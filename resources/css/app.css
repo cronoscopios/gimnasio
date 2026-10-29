@@ -1,9 +1,26 @@
-@import 'tailwindcss';
+/*
+ * Gimnasio ACME: hoja de estilos principal (CSS3 puro).
+ *
+ * Orden de cascada: reset < base < layout < components < utilities.
+ * Cada archivo importado declara su propio bloque @layer.
+ */
+@layer reset, base, layout, components, utilities;
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
+@import './base/tokens.css';
+@import './base/reset.css';
+@import './base/base.css';
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+@import './layout/layout.css';
+
+@import './components/button.css';
+@import './components/site-header.css';
+@import './components/site-footer.css';
+@import './components/hero.css';
+@import './components/page-header.css';
+@import './components/card.css';
+@import './components/plan.css';
+@import './components/timetable.css';
+@import './components/faq.css';
+@import './components/media-placeholder.css';
+
+@import './utilities/utilities.css';

@@ -1,0 +1,52 @@
+@layer components {
+    .card {
+        --card-accent: var(--color-primary);
+
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-2);
+        padding: calc(var(--space-6) + 10px) var(--space-6) var(--space-6);
+        border: var(--border);
+        border-radius: var(--radius-md);
+        background: linear-gradient(var(--card-accent) 0 10px, var(--color-surface) 10px);
+    }
+
+    /* Rotación de colores de acento para listados de tarjetas. */
+    .grid > :nth-child(5n + 2) > .card,
+    .grid > .card:nth-child(5n + 2) {
+        --card-accent: var(--color-sky);
+    }
+
+    .grid > :nth-child(5n + 3) > .card,
+    .grid > .card:nth-child(5n + 3) {
+        --card-accent: var(--color-mint);
+    }
+
+    .grid > :nth-child(5n + 4) > .card,
+    .grid > .card:nth-child(5n + 4) {
+        --card-accent: var(--color-berry);
+    }
+
+    .grid > :nth-child(5n + 5) > .card,
+    .grid > .card:nth-child(5n + 5) {
+        --card-accent: var(--color-sun);
+    }
+
+    .card__title a {
+        text-decoration: none;
+    }
+
+    .card__text {
+        flex: 1;
+        color: var(--color-muted);
+    }
+
+    .card__meta {
+        font-size: var(--text-sm);
+        font-weight: 600;
+    }
+
+    .card__footer {
+        margin-top: var(--space-4);
+    }
+}

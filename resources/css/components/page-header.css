@@ -1,0 +1,22 @@
+@layer components {
+    .page-header {
+        background: var(--page-header-color, var(--color-sun));
+        border-bottom: var(--border);
+    }
+
+    .page-header__content {
+        padding-block: var(--space-16) var(--space-12);
+    }
+
+    .page-header__intro {
+        max-width: 40rem;
+        margin-top: var(--space-4);
+        font-size: var(--text-lg);
+    }
+
+    .page-header__meta {
+        margin-top: var(--space-4);
+        font-size: var(--text-sm);
+        font-weight: 600;
+    }
+}

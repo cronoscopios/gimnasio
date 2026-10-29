@@ -1,0 +1,29 @@
+@layer utilities {
+    .text-muted {
+        color: var(--color-muted);
+    }
+
+    .text-small {
+        font-size: var(--text-sm);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .eyebrow {
+        font-size: var(--text-sm);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+}

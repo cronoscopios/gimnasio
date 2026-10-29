@@ -1,6 +1,6 @@
 # Gimnasio
 
-Aplicación web para la gestión de un gimnasio, construida con **Laravel 13**, **Tailwind CSS 4** y **Vite 8**.
+Aplicación web para la gestión de un gimnasio, construida con **Laravel 13**, **CSS3 puro** (sin frameworks) y **Vite 8**.
 
 > **Estado:** proyecto en fase inicial. Por ahora el repositorio contiene la base de Laravel configurada (autenticación de usuarios por defecto, colas, caché y sesiones en base de datos) y el entorno de desarrollo listo para empezar a construir las funcionalidades del gimnasio.
 
@@ -28,7 +28,7 @@ Aplicación web para la gestión de un gimnasio, construida con **Laravel 13**, 
 | Lenguaje backend | PHP | 8.5 (mínimo 8.3) |
 | Framework | Laravel | 13.x |
 | Base de datos | SQLite (por defecto) | — |
-| CSS | Tailwind CSS | 4.x |
+| CSS | CSS3 puro (custom properties + `@layer`) | — |
 | Bundler | Vite + `laravel-vite-plugin` | 8.x / 3.x |
 | Tests | PHPUnit | 12.x |
 | Formateo de código | Laravel Pint | 1.x |
@@ -197,7 +197,7 @@ gimnasio/
 │   └── seeders/            # Seeders
 ├── public/                 # Document root (index.php, assets compilados en build/)
 ├── resources/
-│   ├── css/app.css         # Entrada de Tailwind
+│   ├── css/               # CSS puro: base/, layout/, components/, utilities/ (entrada: app.css)
 │   ├── js/app.js           # Entrada de JavaScript
 │   └── views/              # Vistas Blade
 ├── routes/
@@ -247,7 +247,7 @@ El proyecto está preparado para trabajar con agentes de IA como **Claude Code**
 
 - **`CLAUDE.md` / `AGENTS.md`**: guías y convenciones que siguen los agentes.
 - **`boost.json`**: configuración de Boost (guidelines, skills y servidor MCP).
-- **`.claude/skills/`**: skills del proyecto (buenas prácticas de Laravel, testing, Tailwind, diseño de interfaces con *Impeccable*, despliegue en Laravel Cloud).
+- **`.claude/skills/`**: skills del proyecto (buenas prácticas de Laravel, testing, diseño de interfaces con *Impeccable*, despliegue en Laravel Cloud).
 - **`.claude/agents/`**: subagentes especializados.
 
 ### Servidor MCP
